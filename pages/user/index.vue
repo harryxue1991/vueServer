@@ -8,10 +8,10 @@
         import axios from 'axios'
         export default {
                 layout: 'blog',
-                asyncData (con) {  //用于异步加载
+                asyncData (context) {  //用于异步加载
                         return axios.get('http://127.0.0.1:3000/xin')
                         .then((res) => {
-                                return { 
+                                return {
                                         title: res.data.title 
                                 }
                         })
