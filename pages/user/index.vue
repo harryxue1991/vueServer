@@ -9,7 +9,7 @@
         export default {
                 layout: 'blog',
                 asyncData (context) {  //用于异步加载
-                        return axios.get('http://127.0.0.1:3456/xin')
+                        return axios.get('http://127.0.0.1:8899/xin')
                         .then((res) => {
                                 return {
                                         title: res.data.title 
